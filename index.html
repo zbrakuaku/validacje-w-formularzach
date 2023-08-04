@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styless.css">
+    <script src="script.js"></script>
+</head>
+<body onload="document.form1.text1.focus()">
+<div class="mail">
+    <h2>Formularz</h2>
+    <form name="form" action="#">
+        <ul>
+            <label for="">Imie i nazwisko:</label>
+            <li><input type="text" name="ImieNazwisko" id="imie"></li><br>
+
+            <label for="">E-mail:</label>
+            <li><input type="text" name="email" id="email"></li><br>
+
+            <label for="">Nr telefonu:</label>
+            <li><input type="text" name="NrTel" id="phone"></li><br>
+
+            <label for="">Wiadomość:</label>
+            <li><textarea name="wiadomosc" id="" cols="30" rows="10"></textarea></li><br>
+            
+            <li class="validate">
+                <b><input class="spr" type="submit" name="validate" value="Wyślij" onclick="SprawdzaniePoprawnosci()"  /></b>
+            </li><br>
+        </ul>
+    </form>
+</div>
+</body>
+</html>
